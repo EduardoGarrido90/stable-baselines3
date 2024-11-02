@@ -12,10 +12,10 @@ from stable_baselines3.common.policies import ActorCriticCnnPolicy, ActorCriticP
 from stable_baselines3.common.type_aliases import GymEnv, MaybeCallback, Schedule
 from stable_baselines3.common.utils import explained_variance, get_schedule_fn
 
-SelfPPO = TypeVar("SelfPPO", bound="PPO")
+SelfPPO = TypeVar("SelfPPO", bound="ECPPO")
 
 
-class PPO(OnPolicyAlgorithm):
+class ECPPO(OnPolicyAlgorithm):
     """
     Proximal Policy Optimization algorithm (PPO) (clip version)
 
